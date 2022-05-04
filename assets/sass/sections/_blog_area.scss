@@ -1,0 +1,7 @@
+// our-blog-area
+.blog-area {
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

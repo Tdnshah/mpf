@@ -1,0 +1,26 @@
+// attend-events-area
+.attend-events-area {
+    &.m-top {
+        position: relative;
+        margin-top: -25px;
+        z-index: 0;
+    }
+    &.bg-image {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .attend-title-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .section-title {
+            width: calc(100% / 2);
+        }
+        .section-paragraph {
+            width: 50%;
+            padding-right: 80px;
+        }
+    }
+}

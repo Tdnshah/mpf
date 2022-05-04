@@ -1,0 +1,41 @@
+// volunteer-area
+.volunteer-area {
+    &.m-top {
+        position: relative;
+        z-index: 1;
+        margin-top: -150px;
+    }
+    &.m-top-02 {
+        position: relative;
+        z-index: 1;
+        margin-top: -25px;
+    }
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .volunteer-title-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .section-title {
+            width: calc(100% / 2);
+        }
+        .section-paragraph {
+            width: 50%;
+            padding-right: 80px;
+        }
+    }
+}
+
+.volunteer-single-item-lists {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    li {
+        width: calc(100% / 3);
+    }
+}

@@ -1,0 +1,21 @@
+// Contact Area/
+.contact-inner-area {
+    .content-area-wrapper {
+        position: relative;
+        z-index: 0;
+        &.bg-image {
+            min-height: 400px;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .content-area {
+            position: absolute;
+            right: 0;
+            display: inline-block;
+            padding: 20px 40px;
+            background-color: rgba($color: #1a191f, $alpha: .90);
+        }
+    }
+}

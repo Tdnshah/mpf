@@ -1,0 +1,31 @@
+/*----------------------------
+    Counterup Item
+----------------------------*/
+
+.single-counterup-01 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    .icon {
+        margin-right: 15px;
+        font-size: 70px;
+        line-height: 80px;
+        color: var(--main-color-one);
+    }
+    .content {
+        .title {
+            font-size: 14px;
+            line-height: 28px;
+            color: $white;
+            font-family: var(--body-font);
+        }
+        .count-wrap {
+            font-size: 42px;
+            line-height: 52px;
+            font-weight: 700;
+            color: $white;
+            font-family: var(--heading-font);
+        }
+    }
+}

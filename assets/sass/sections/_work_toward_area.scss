@@ -1,0 +1,86 @@
+// work-towards-area
+.work-towards-area {
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 0;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(#000, .5);
+            z-index: -1;
+        }
+    }
+    .left-content {
+        .inner-section-title {
+            &.bg-image {
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .title {
+                font-size: 72px;
+                line-height: 82px;
+                font-weight: 700;
+                color: $white;
+            }
+        }
+    }
+    .right-content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        &.style-01 {
+            height: inherit;
+            margin-top: 60px;
+        }
+        &.style-02 {
+            height: inherit;
+            margin-top: 60px;
+            justify-content: left;
+        }
+        .vdo-btn {
+            &:hover {
+                a {
+                    i {
+                        &::after {
+                            left: 0;
+                            top: 0;
+                        }
+                    }
+                }
+            }
+            a {
+                color: $white;
+                i {
+                    position: relative;
+                    z-index: 1;
+                    display: inline-block;
+                    width: 130px;
+                    height: 130px;
+                    line-height: 130px;
+                    text-align: center;
+                    font-size: 16px;
+                    background-color: var(--main-color-one);
+                    border-radius: 50%;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: -10px;
+                        top: -10px;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 50%;
+                        transition: all .5s ease;
+                        border: 2px solid $black;
+                    }
+                }
+            }
+        }
+    }
+}

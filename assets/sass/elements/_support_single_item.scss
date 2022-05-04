@@ -1,0 +1,24 @@
+.support-single-item {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f3f0ea;
+    border-radius: 5px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
+    .icon {
+        font-size: 55px;
+        color: var(--main-color-one);
+        margin-right: 10px;
+    }
+    .content {
+        .title {
+            font-size: 30px;
+            line-height: 40px;
+            font-weight: 700;
+            margin: 0;
+        }
+        p {
+            margin-bottom: 0;
+        }
+    }
+}

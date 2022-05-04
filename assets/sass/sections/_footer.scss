@@ -1,0 +1,37 @@
+/*-------------------------
+    Footer Area
+-------------------------*/
+
+.footer-top {
+    border-bottom: 1px solid rgba(114, 108, 148, .2);
+    .footer-top-border {
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba(114, 108, 148, .2);
+    }
+    &.style-01 {
+        border-bottom: 1px solid #f3f0ea;
+        background-color: #f3f0ea;
+        .widget {
+            .widget-title {
+                color: #2b2a35;
+            }
+        }
+    }
+    &.bg-image {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.copyright-area {
+    background-color: #131217;
+    .copyright-area-inner {
+        color: #a8a8a8;
+    }
+    &.style-01 {
+        background-color: #f0ece3;
+        .copyright-area-inner {
+            color: #54606c;
+        }
+    }
+}
