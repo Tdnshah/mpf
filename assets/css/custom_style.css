@@ -189,3 +189,45 @@
     margin: auto;
     filter: grayscale(100%);
 }
+
+footer .row{
+    padding: 0px;
+}
+
+.cta{
+    border: 3px solid #1d1e21;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: medium;
+
+}
+
+.cta:hover{
+    border:3px solid #92DCE5;
+    background-color: #F2E500;
+    font-weight: bold;
+}
+
+.communities-logos .row {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* community page partnership logos */
+
+.community-icon{
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+}
+
+.community-icon:hover{
+    background-color: #92DCE5;
+}
+
+/* container footer remove padding */
+footer .container{
+    padding:0;
+}
