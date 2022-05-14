@@ -146,12 +146,12 @@
         var $headerCarousel = $('.header-slider-one');
         if ($headerCarousel.length > 0) {
             $headerCarousel.owlCarousel({
-                loop: true,
-                autoplay: true, //true if you want enable autoplay
+                loop: false,
+                autoplay: false, //true if you want enable autoplay
                 autoPlayTimeout: 1000,
                 margin: 30,
-                dots: true,
-                nav: true,
+                dots: false,
+                nav: false,
                 navText: ['<i class="fas fa-chevron-left"></i>', '<i class="fas fa-chevron-right"></i>'],
                 animateOut: 'fadeOut',
                 animateIn: 'fadeIn',
