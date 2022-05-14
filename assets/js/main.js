@@ -204,8 +204,55 @@
             searchPopup.addClass('active');
             bodyOvrelay.addClass('active');
         });
-
-
+        /* community page icon menu for partnership  */
+        $(document).on('click', '#academic', function(e) {
+            $('#community-civil-society-organisation').addClass('d-none');
+            $('#community-corporate').addClass('d-none');
+            $('#community-government').addClass('d-none');
+            $('#community-international-development').addClass('d-none');
+            $('#community-youth-organisation').addClass('d-none');
+            $('#community-academic-institution').removeClass('d-none');
+        });
+        $(document).on('click', '#civil', function(e) {
+            $('#community-academic-institution').addClass('d-none');
+            $('#community-corporate').addClass('d-none');
+            $('#community-government').addClass('d-none');
+            $('#community-international-development').addClass('d-none');
+            $('#community-youth-organisation').addClass('d-none');
+            $('#community-civil-society-organisation').removeClass('d-none');
+        });
+        $(document).on('click', '#corporate', function(e) {
+            $('#community-civil-society-organisation').addClass('d-none');
+            $('#community-academic-institution').addClass('d-none');
+            $('#community-government').addClass('d-none');
+            $('#community-international-development').addClass('d-none');
+            $('#community-youth-organisation').addClass('d-none');
+            $('#community-corporate').removeClass('d-none');
+        });
+        $(document).on('click', '#government', function(e) {
+            $('#community-civil-society-organisation').addClass('d-none');
+            $('#community-corporate').addClass('d-none');
+            $('#community-international-development').addClass('d-none');
+            $('#community-youth-organisation').addClass('d-none');
+            $('#community-academic-institution').addClass('d-none');
+            $('#community-government').removeClass('d-none');
+        });
+        $(document).on('click', '#international', function(e) {
+            $('#community-civil-society-organisation').addClass('d-none');
+            $('#community-corporate').addClass('d-none');
+            $('#community-government').addClass('d-none');
+            $('#community-youth-organisation').addClass('d-none');
+            $('#community-academic-institution').addClass('d-none');
+            $('#community-international-development').removeClass('d-none');
+        });
+        $(document).on('click', '#youth', function(e) {
+            $('#community-civil-society-organisation').addClass('d-none');
+            $('#community-corporate').addClass('d-none');
+            $('#community-government').addClass('d-none');
+            $('#community-international-development').addClass('d-none');
+            $('#community-academic-institution').addClass('d-none');
+            $('#community-youth-organisation').removeClass('d-none');
+        });
     });
 
 
@@ -278,5 +325,8 @@
         lastScrollTop = st;
     }
 
+    function show() {
+        console.log('jdsfjksf');
+    }
 
 })(jQuery);
