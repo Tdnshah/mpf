@@ -32,7 +32,11 @@
     width:250px;
     height: 350px;
 }
-
+@media only screen and (max-width: 576px) {
+    .volunteer-single-item::after{
+        content:none;
+    } 
+}
 
 #background-video {
     width: 100vw;
@@ -227,9 +231,4 @@ footer .row{
 
 .community-icon:hover{
     background-color: #92DCE5;
-}
-
-/* container footer remove padding */
-footer .container{
-    padding:0;
 }
