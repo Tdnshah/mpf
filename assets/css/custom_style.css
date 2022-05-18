@@ -1,7 +1,7 @@
 
 :root {
     --main-color-one: #F2E500;
-    --main-color-two: #92DCE5;
+    --main-color-two: #616161;
     --secondary-color: #92DCE5;
     --paragraph-color: #616161;
 }
@@ -81,11 +81,11 @@
     Footer Widgets 
 -----------------------------*/
 .widget.footer-widget p {
-    color: rgba(22, 21, 21, 0.733);
+    color: #eee;
 }
 
 .widget.footer-widget ul li a, .widget.footer-widget ul li, .widget.footer-widget .widget-title {
-    color: rgba(22, 21, 21, 0.733);
+    color: #eee;
 }
 
 .about-content-area .bg-img.about-right {
