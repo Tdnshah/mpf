@@ -232,3 +232,14 @@ footer .row{
 .community-icon:hover{
     background-color: #92DCE5;
 }
+
+@media only screen and (max-width: 991px) {
+    .navbar-area .nav-container .responsive-mobile-menu .navbar-toggler {
+        border: none
+    }
+}
+@media only screen and (max-width: 991px){
+    .navbar-area.nav-style-02 .nav-container .navbar-toggler {
+        background-color: transparent;
+    }
+}
