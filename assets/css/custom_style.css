@@ -415,6 +415,9 @@ footer .row{
 .non-homepage.navbar-area.nav-style-02.charity-nav-03 .nav-container .navbar-collapse .navbar-nav .current-menu-item a{
     color:#F2E500;
 } 
+.non-homepage.navbar-area.nav-style-02.charity-nav-03 .nav-container .navbar-collapse .navbar-nav a:hover{
+    color:#F2E500;
+} 
 .navbar.navbar-area.nav-style-01 .navbar-toggler-icon.homepage img{
     fill: #fff;
 }
