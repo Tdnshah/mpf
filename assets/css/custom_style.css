@@ -333,21 +333,21 @@ a {
 /* our vision */
 
 .bg-img.our-vision{
-    background-position-x: -60px;
+    background-position-x: -15px;
 }
-
-
 
 /* Counter */
 
 .single-counterup-01{
     margin-bottom: 0 ;
+    justify-content: left;
 }
 
 .single-counterup-01 .icon {
     margin-right: 0;
 }
-
+.counterup-area .col-lg-3 {
+}
 /* partnership */
 #partnership .row {
     margin-top: 30px;
@@ -419,3 +419,20 @@ footer .row{
     fill: #fff;
 }
   
+.about-area {
+    /* background-color: #f3f0ea; */
+}
+.about-area.bg-image{
+    /* background-repeat: ; */
+    background-size: contain;
+    background-position: top;    
+    position: relative;
+    margin-top: -35px;
+    z-index: 0;
+}
+
+.about-area.form-group{
+    position: relative;
+    margin-top: -35px;
+    z-index: 0;
+}
