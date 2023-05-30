@@ -445,6 +445,9 @@ footer .row{
 }
 
 /* Tejas Customisation */
+html{
+    scroll-behavior: smooth;
+}
  
 .logo{
     height: 60px;
