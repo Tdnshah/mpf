@@ -11,6 +11,9 @@
     <link rel=icon href=favicon.ico sizes="20x20" type="image/png">
     <!-- animate -->
     <!-- <link rel="stylesheet" href="assets/css/animate.css"> -->
+    <!--Splide-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" />
+    <!--Splide end-->
     <!-- bootstrap -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <!-- magnific popup -->
@@ -61,7 +64,7 @@
                     <div class="">
                         <a href="index" class="logo">
                             <img src="assets/sustainability/header/logo.png" alt="#28for28-logo" class="logo">
-                        </a>
+                       
                     </div>
                     
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bizcoxx_main_menu" aria-expanded="false" aria-label="Toggle navigation">
@@ -283,6 +286,39 @@
         </div>
         <div class="container margin-bottom-55">
         </div>
+        <!--Changemakers Secction-->
+        <div class="container margin-bottom-55">
+            <div class="row justify-content-center padding-top-30">
+                <div class="col-lg-8 col-sm-11 col-11">
+                    <div class="section-title b-top desktop-center padding-top-25 margin-bottom-35">
+                        <!-- <span>Why #28For28</span> -->
+                        <h2 class="title">Changemakers</h2>
+                    </div>
+                </div>
+            </div>
+            <section class="splide" id="knre" aria-labelledby="carousel-heading" x-data="{ 'showModal': false, 'imgUrl': '' }" @keydown.escape="showModal = false">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                        <li class="splide__slide overflow-hidden relative group">
+                            <img class="" src="./assets/changemakers/Sarah.jpg" alt="" @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide rounded-lg overflow-hidden  relative group">    
+                            <img class="" src="./assets/changemakers//Shristi.jpg" alt="" @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide rounded-lg overflow-hidden  relative group">       
+                            <img class="" src="./assets/changemakers//Srijanita.jpg"  alt="" @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class="" src="./assets/changemakers//Venkatesh.jpg" alt="" @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                      </ul>
+                  </div>
+                <div class="splide__progress">
+                    <div class="splide__progress__bar"  style="margin-top:10px; background-color:#1aadae;">
+                </div>
+                </div>
+            </section>
+        </div>
         <div class="call-to-action margin-bottom-55">
             <div class="container">
                 <div class="row">
@@ -314,9 +350,90 @@
                 <img src="./assets/sustainability/events/events-timeline.jpeg" alt="28for28-events-timeline" width="50%" style="text-align: center;">
             </div>  
         </div>
+        <!--!Gallery Section -->
+        <div class="gallery margin-bottom-55 ">
+        <div class="row justify-content-center padding-top-30">
+            <div class="col-lg-8 col-sm-11 col-11">
+                <div class="section-title b-top desktop-center padding-top-25 margin-bottom-35">
+                    <!-- <span>Why #28For28</span> -->
+                    <h2 class="title">Gallery</h2>
+                </div>
+            </div>
+        </div>
+        <section class="splide" id="gallery"  class="gallery">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8779.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8783.JPG" alt="">
+                        </li>                 
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8797.JPG" alt="">
+                        </li>                 
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8798.JPG" alt="">
+                        </li>                
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8804.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8809.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8810.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8811.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8820.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8821.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8826.JPG" alt="">
+                        </li>          
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8828.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8833.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8840.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8848.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8860.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8874.JPG" alt="">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class=""  src="./assets/gallery/0A8A8880.JPG" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div class="splide__progress">
+                    <div class="splide__progress__bar" style="margin-top:10px; background-color: #e3b505;">
+                </div>
+        </section>
+        </div>
         <div id="partners" class="partners-logo margin-bottom-55">
+            <div class="row justify-content-center padding-top-30">
+                <div class="col-lg-8 col-sm-11 col-11">
+                    <div class="section-title b-top desktop-center padding-top-25 margin-bottom-35">
+                        <!-- <span>Why #28For28</span> -->
+                        <h2 class="title">In Association with</h2>
+                    </div>
+                </div>
+            </div>
             <div class="container">
-                <h1 class="padding-top-55 padding-bottom-55" style="text-align: center;">In Association with</h1>
                 <div class="row margin-top-55">
                    <div class="col-lg-3 col-xl-3"  style="margin:auto;text-align:center;">
                         <a href="https://www.international.gc.ca/" target="_blank"><img src="./assets/sustainability/partner-logos/Canada.svg" alt="canada high commission logo" style="height:50px;"></a> 
@@ -326,9 +443,6 @@
                     </div>
                    <div class="col-lg-3 col-xl-3"  style="margin:auto;text-align:center;">
                         <a href="https://www.savethechildren.net/" target="_blank"><img src="./assets/sustainability/partner-logos/STC_Logo_Eng_Horiz_ColPos_RGB.svg" alt="save the child logo" style="height: 80px;"></a>
-                    </div>
-                    <div class="col-lg-3 col-xl-3" style="margin:auto;text-align:center;">
-                        <a href="https://thehigglers.com/" target="_blank"><img src="./assets/sustainability/partner-logos/thehigglers-logo.svg" alt="technology partner the higglers company logo" style="height: 30px;"></a>
                     </div>
                 </div>
             </div>
@@ -442,6 +556,59 @@
     <script src="assets/js/active.rProgressbar.js"></script>
     <!-- main js -->
     <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+         // knre slide
+         document.addEventListener( 'DOMContentLoaded', function() {
+            var splideknre = new Splide( '#knre' ,  {
+                perPage: 3,
+                perMove: 1,
+                rewind : true,
+                type : 'loop',
+                autoplay: 'true',
+                gap:20,
+                drag:true,
+                trimSpace: 'move',
+                breakpoints: {
+                    640: {
+                        perPage:1,
+                    },
+                    768:{
+                        perPage:2,
+                    }
+                },
+                } 
+            );
+            splideknre.mount();
+
+        } );
+
+          //Gallery 
+          document.addEventListener( 'DOMContentLoaded', function() {
+            var splidegallery = new Splide( '#gallery' ,  {
+                perPage: 5,
+                perMove: 1,
+                rewind : true,
+                autoplay: 'true',
+                gap:20,
+                drag:true,
+                trimSpace: 'move',
+                breakpoints: {
+                    640: {
+                        perPage:1,
+                    },
+                    768:{
+                        perPage:2,
+                    }
+                },
+                } 
+            );
+            splidegallery.mount();
+
+        } );
+
+
+    </script>
 
 </body>
 
