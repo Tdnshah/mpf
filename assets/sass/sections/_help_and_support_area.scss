@@ -1,0 +1,102 @@
+// help-and-support
+.help-and-support-left {
+    .content {
+        ul {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                a {
+                    i {
+                        margin-right: 10px;
+                        color: var(--main-color-one);
+                    }
+                }
+            }
+        }
+    }
+}
+
+.help-and-support-right {
+    position: relative;
+    z-index: 0;
+    &.style-01 {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+    .support-img {
+        position: relative;
+        z-index: 0;
+
+        &.bg-image {
+            min-height: 400px;
+            height: 100%;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 60px;
+            height: 590px;
+            top: -20%;
+            right: 12%;
+            border-radius: 30px;
+            transform: rotate(35deg);
+            background-color: var(--main-color-one);
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            background-repeat: no-repeat;
+            top: 66%;
+            left: -20%;
+            transform: translateY(-50%);
+            background-image: url(../img/support/bg.png);
+        }
+
+    }
+
+    .donation-content {
+        height: 120px;
+        width: 120px;
+        position: absolute;
+        top: 50%;
+        left: -60px;
+        padding-top: 35px;
+        transform: translateY(-50%);
+        text-align: center;
+        border-radius: 50%;
+        box-shadow: 0px 0px 109px 0px rgba(0, 0, 0, 0.2);
+        background-color: $white;
+
+        .price {
+            margin-bottom: 0;
+            font-size: 30px;
+            font-weight: 700;
+            color: var(--main-color-one);
+        }
+    }
+
+    .support-img-02 {
+        position: relative;
+        z-index: 0;
+
+        &.bg-image {
+            min-height: 450px;
+            height: 100%;
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+}

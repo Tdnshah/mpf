@@ -1,0 +1,54 @@
+/*----------------------------
+    Top Bar
+----------------------------*/
+
+.topbar-area {
+    background-color: #1a191f;
+    &.style-01 {
+        background-color: transparent;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+    }
+    &.style-02 {
+        background-color: rgba($color: #fff, $alpha: 0.05);
+        position: absolute;
+        width: 100%;
+        top: 0;
+        z-index: 5;
+        .topbar-inner {
+            margin-left: 0;
+        }
+    }
+}
+
+.topbar-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-left: 300px;
+    &.style-01 {
+        padding: 0;
+        .right-contnet {
+            .social-link {
+                padding-left: 40px;
+                ul {
+                    li {
+                        .info-bar-item {
+                            margin-left: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right-contnet {
+        display: flex;
+        align-items: center;
+        .volunteer-right {
+            margin-left: 50px;
+        }
+    }
+}

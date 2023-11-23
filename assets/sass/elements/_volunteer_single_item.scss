@@ -1,0 +1,92 @@
+// volunteer single Item
+.volunteer-single-item {
+    text-align: center;
+    transition: all .3s ease-out;
+    background-color: #9238a4;
+    border-radius: 50px;
+    padding: 40px 60px 70px;
+    position: relative;
+    z-index: 0;
+    &::after {
+        content: '';
+        position: absolute;
+        left: 4%;
+        transform: skewY(4deg);
+        top: -30px;
+        background-color: transparent;
+        width: 320px;
+        height: 410px;
+        // clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 95%);
+        border: 2px solid $black;
+        border-radius: 50px;
+    }
+    &.no-border {
+        &::after {
+            display: none;
+        }
+    }
+    &.no-border-radius {
+        border-radius: 0;
+        &::after {
+            display: none;
+        }
+    }
+    &.style-01 {
+        background-color: var(--main-color-one);
+    }
+    &.style-02 {
+        background-color: #00bdc0;
+    }
+    &:hover {
+        .icon {
+            &::after {
+                transform: rotate(130deg);
+            }
+        }
+        .content {
+            .title {
+                color: $white;
+            }
+            p {
+                color: $white;
+            }
+        }
+    }
+    .icon {
+        font-size: 80px;
+        color: $white;
+        transition: all 500ms;
+        margin-bottom: 10px;
+        position: relative;
+        z-index: 0;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 40%;
+            transform: rotate(40deg);
+            width: 45px;
+            height: 130px;
+            border-radius: 50px;
+            transition: all 500ms;
+            background-color: rgba($color: #fff, $alpha: 0.20);
+            z-index: -1;
+        }
+    }
+    .content {
+        flex: 1;
+        .title {
+            font-size: 26px;
+            line-height: 36px;
+            color: $white;
+            font-family: var(--heading-font);
+            font-weight: 700;
+            transition: all 500ms;
+        }
+        p {
+            color: $white;
+            font-size: 14px;
+            line-height: 24px;
+            margin: auto;
+        }
+    }
+}

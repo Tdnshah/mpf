@@ -1,0 +1,43 @@
+/*----------------------------
+    Header Bottom Area
+-----------------------------*/
+
+.header-bottom-wrapper {
+    .right-content {
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+}
+
+.header-bottom-area {
+    position: relative;
+    z-index: 0;
+    &.bg-image {
+        position: relative;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        z-index: 0;
+    }
+    &.m-bottom {
+        margin-bottom: -90px;
+        position: relative;
+        z-index: 1;
+    }
+    &.m-top {
+        margin-top: -20px;
+        position: relative;
+        z-index: 1;
+    }
+    .bg-img {
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        top: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+}

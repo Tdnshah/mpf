@@ -1,0 +1,48 @@
+/*---------------------------
+    Request Form Quote
+---------------------------*/
+
+.request-page-form {
+    .form-group {
+        textarea {
+            max-height: 90px;
+            width: 100%;
+            resize: none;
+            padding: 15px 30px 15px 30px;
+            border: 1px solid #ebebeb;
+            &::placeholder {
+                color: rgba(#2b2a35, 0.7);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+        .form-control {
+            border: 1px solid #ebebeb;
+            padding: 15px 30px 15px 30px;
+            color: var(--heading-color);
+            background-color: transparent;
+            &::placeholder {
+                color: rgba(#2b2a35, 0.7);
+                font-size: 14px;
+                font-weight: 500;
+            }
+        }
+    }
+    .submit-btn {
+        background-color: var(--main-color-one);
+        width: 100%;
+        padding: 19px 40px;
+        font-weight: 700;
+        border-radius: 5px;
+        text-transform: uppercase;
+        color: $white;
+        cursor: pointer;
+        transition: all .3s ease-in-out;
+        border: 1px solid var(--main-color-one);
+        &:hover {
+            background-color: var(--secondary-color);
+            color: $white;
+            border: 1px solid var(--secondary-color);
+        }
+    }
+}

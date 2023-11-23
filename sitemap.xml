@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://mashglobal.org/</loc>
+	</url>
+        <url>
+                <loc>https://mashglobal.org/index</loc>
+        </url>
+        <url>
+                <loc>https://mashglobal.org/about</loc>
+        </url>
+        <url>
+                <loc>https://mashglobal.org/community</loc>
+        </url>
+        <url>
+                <loc>https://mashglobal.org/contact</loc>
+        </url>
+        <url>
+                <loc>https://mashglobal.org/events</loc>
+        </url>
+	<url>
+		<loc>https://mashglobal.org/28for28/</loc>
+	</url>
+</urlset>

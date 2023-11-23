@@ -1,0 +1,94 @@
+/*------------------------------
+    Testimonial Item
+-----------------------------*/
+
+.testimonial-carousel {
+    .slick-slide {
+        &.slick-center {
+            .icon {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.content-carousel {
+    .slick-slide {
+        &.slick-center {
+            .content {
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.single-testimonial-item {
+    .thumb {
+        position: relative;
+        z-index: 0;
+        &.bg-image {
+            width: 80px;
+            height: 80px;
+            text-align: center;
+            margin: auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .icon {
+            position: absolute;
+            top: -20px;
+            right: 0;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            opacity: 0;
+            text-align: center;
+            margin-top: 20px;
+            background-color: var(--main-color-one);
+            line-height: 30px;
+            font-size: 16px;
+            color: $white;
+        }
+    }
+    .content {
+        text-align: center;
+        opacity: 0;
+        &.style-01 {
+            .author-details {
+                .author-meta {
+                    .title {
+                        color: #616161;
+                    }
+                }
+            }
+            .description {
+                color: #616161;
+            }
+        }
+        .description {
+            font-size: 18px;
+            line-height: 35px;
+            color: rgba($white, 0.9);
+            font-style: italic;
+            font-weight: 400;
+        }
+        .author-details {
+            display: flex;
+            align-self: flex-start;
+            .author-meta {
+                flex: 1;
+                margin-top: 15px;
+                .title {
+                    font-size: 18px;
+                    font-family: var(--body-font);
+                    color: $white;
+                    font-weight: 600;
+                }
+                .designation {
+                    font-size: 14px;
+                    color: var(--secondary-color);
+                }
+            }
+        }
+    }
+}
