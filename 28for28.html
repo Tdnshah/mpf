@@ -37,26 +37,7 @@
     </head>
 
     <body>
-        <div class="modal fade bg-warning" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Apply To Be A Changemaker</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdrFAVF7TebRb9X2s2AZSKA0hCruupTqvVEO53aeWozPHhfVg/viewform" 
-                        width="550" height="600" 
-                        frameborder="0" marginheight="0"
-                        marginwidth="0">
-                        Loading…
-                    </iframe>
-                </div>
-                </div>
-            </div>
-        </div>
+        
         <!-- preloader area start -->
         <div class="preloader" id="preloader">
             <div class="preloader-inner">
@@ -127,7 +108,7 @@
                 style="height:100vh;">
                 <video id="background-video" autoplay loop muted
                     poster="assets/sustainability/header/28For28_video_thumbnail.jpg">
-                    <source src="./assets/sustainability/header/28-28video.mp4"
+                    <source src="assets/sustainability/header/28-28_video.mp4"
                         type="video/mp4">
                 </video>
             </div>
@@ -151,14 +132,14 @@
                                     </p>
                                     <h3> Shape the future with #28for28</h3>
                                     <div class="margin-top-35">
-                                        <button
-                                            type="button"
-                                            class="media-button margin-top-25 padding-top-30"
-                                            id="exampleModal"
-                                            data-toggle="modal" data-target="#exampleModal"
-                                            >
-                                            Apply to be a changemaker
-                                        </button>
+                                        
+                                            <button
+                                                type="button"
+                                                class="media-button margin-top-25 padding-top-30"
+                                                >
+                                                Apply to be a changemaker
+                                            </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -192,7 +173,7 @@
                 </div>
                 <div class="volunteer-area padding-top-30">
                     <div class="row">
-                        <div class="col-lg-6 col-xl-3 col-md-6">
+                        <div class="col-lg-8 col-xl-3 col-md-6">
                             <div
                                 class="volunteer-single-item margin-bottom-30 bg-image"
                                 style="background-image: url(assets/common/bg.png);">
@@ -286,6 +267,8 @@
                 <!--Why 28for28 section-->
             </div>
         </div>
+
+        <!-- Our Supporters section -->
         <div id="our-supporter" class="container margin-bottom-55">
             <!--Our Supporters Video section-->
             <div class="row justify-content-center padding-top-30">
@@ -307,38 +290,46 @@
             </div>
             <div class="volunteer-area">
                 <div class="row justify-content-center">
-                    <div class="col-lg-6 col-xl-2 col-md-6"
-                        style="margin-right:10px;">
-                        <video poster width="100%" height="400px" controls>
+                    <div class="col-lg-8 col-xl-2 col-md-6" style="margin-right:10px;">
+                        <video preload="metadata" width="100%" height="280px" controls>
                             <source
                                 src="./assets/sustainability/our-supporter-section/dia-mirza.mp4"
                                 type="video/mp4">
                         </video>
                     </div>
-                    <div class="col-lg-6 col-xl-2 col-md-6"
-                        style="margin-left:10px;">
-                        <video id poster height="400px" width="100%"
+                    <div class="col-lg-8 col-xl-2 col-md-6" style="margin-left:10px;">
+                        <video preload="metadata" id poster width="100%" height="280px"
                             controls>
                             <source
                                 src="./assets/sustainability/our-supporter-section/hcc.mp4"
                                 type="video/mp4">
                         </video>
                     </div>
-                    <div class="col-lg-6 col-xl-2 col-md-6"
+                    <div class="col-lg-8 col-xl-2 col-md-6"
                         style="margin-left:10px;">
-                        <video id poster width="100%" height="400px"
+                        <video preload="metadata" id poster width="100%" height="280px"
                             controls>
                             <source
                                 src="./assets/sustainability/our-supporter-section/mash-aashish.mp4"
                                 type="video/mp4">
                         </video>
                     </div>
-                    <div class="col-lg-6 col-xl-2 col-md-6"
+
+                    <div class="col-lg-8 col-xl-2 col-md-6"
                         style="margin-left:10px;">
-                        <video id poster width="100%" height="400px"
+                        <video preload="metadata" id poster width="100%" height="280px"
                             controls>
                             <source
                                 src="./assets/sustainability/our-supporter-section/STC.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="col-lg-8 col-xl-2 col-md-6" style="margin-left:10px;">
+                        <video preload="metadata" id poster width="100%" height="280px"
+                            controls>
+                            <source
+                                src="./assets/sustainability/our-supporter-section/sanjana.mp4"
                                 type="video/mp4">
                         </video>
                     </div>
@@ -346,8 +337,10 @@
             </div>
             <!--Our Supporters Video section-->
         </div>
+
         <div class="container margin-bottom-55">
         </div>
+
         <!--Changemakers Secction-->
         <div class="container margin-bottom-55">
             <div class="row justify-content-center padding-top-30">
@@ -366,29 +359,98 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Anuradha.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Dhruv Bhatt.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_krishna.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>                        
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Anoushka Jolly.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                        class="splide__slide rounded-lg overflow-hidden  relative group">
+                        <img class
+                            src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Guddi.jpg" alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
                             class="splide__slide overflow-hidden relative group">
-                            <img class src="./assets/changemakers/Sarah.jpg"
+                            <img class src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Abhishek Mani.jpg"
                                 alt
                                 @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
                         </li>
                         <li
                             class="splide__slide rounded-lg overflow-hidden  relative group">
                             <img class
-                                src="./assets/changemakers//Shristi.jpg" alt
-                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
-                        </li>
-                        <li
-                            class="splide__slide rounded-lg overflow-hidden  relative group">
-                            <img class
-                                src="./assets/changemakers//Srijanita.jpg"
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Deepanjali.jpg"
                                 alt
                                 @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
                         </li>
                         <li
                             class="splide__slide rounded-lg overflow-hidden  relative group">
                             <img class
-                                src="./assets/changemakers//Venkatesh.jpg"
+                                src="./assets/changemakers/Kartik.jpg"
                                 alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide overflow-hidden relative group">
+                            <img class src="./assets/changemakers/Micheal.jpg"
+                                alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/Naman.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/Preeti.jpg"
+                                alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Jeeya Thukral.jpg"
+                                alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Nav Aggarwal.jpg"
+                                alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide overflow-hidden relative group">
+                            <img class src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Sainath Manikandan.jpg"
+                                alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        </li>
+                        <li
+                            class="splide__slide rounded-lg overflow-hidden  relative group">
+                            <img class
+                                src="./assets/changemakers/changemake-nov23/Change Maker Reveal_Soham Chindarkar.jpg" alt
                                 @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
                         </li>
                     </ul>
@@ -400,6 +462,72 @@
                 </div>
             </section>
         </div>
+
+        <!--Mentors Secction-->
+        <div class="container margin-bottom-55">
+        <div class="row justify-content-center padding-top-30">
+            <div class="col-lg-8 col-sm-11 col-11">
+                <div
+                    class="section-title b-top desktop-center padding-top-25 margin-bottom-35">
+                    <!-- <span>Why #28For28</span> -->
+                    <h2 class="title">#28for28 Mentors</h2>
+                </div>
+            </div>
+        </div>
+        <section class="splide" id="mentor" class="mentor   "
+            aria-labelledby="carousel-heading"
+            x-data="{ 'showModal': false, 'imgUrl': '' }"
+            @keydown.escape="showModal = false">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li
+                        class="splide__slide rounded-lg overflow-hidden  relative group">
+                        <img class
+                            src="./assets/mentors/photo_2023-11-23 01.44.13.jpeg" alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                    </li>
+                    <li
+                        class="splide__slide overflow-hidden relative group">
+                        <img class src="./assets/mentors/photo_2023-11-23 01.44.17.jpeg"
+                            alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                    </li>
+                    <li
+                        class="splide__slide rounded-lg overflow-hidden  relative group">
+                        <img class
+                            src="./assets/mentors/photo_2023-11-23 01.44.22.jpeg"
+                            alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                    </li>
+                    <li
+                        class="splide__slide rounded-lg overflow-hidden  relative group">
+                        <img class
+                            src="./assets/mentors/photo_2023-11-23 01.44.28.jpeg"
+                            alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                    </li>
+                    <li
+                        class="splide__slide overflow-hidden relative group">
+                        <img class src="./assets/mentors/photo_2023-11-23 01.44.34.jpeg"
+                            alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                    </li>
+                    <li
+                        class="splide__slide rounded-lg overflow-hidden  relative group">
+                        <img class
+                            src="./assets/mentors/photo_2023-11-23 01.45.03.jpeg" alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                    </li>
+                </ul>
+            </div>
+            <div class="splide__progress">
+                <div class="splide__progress__bar"
+                    style="margin-top:30px; background-color:#000000;">
+                </div>
+            </div>
+        </section>
+        </div>
+
         <div class="call-to-action margin-bottom-55">
             <div class="container">
                 <div class="row">
@@ -422,14 +550,14 @@
                     </div>
                     <div class="col-xl-3 col-lg-12 col-md-12"
                         style="margin: auto; text-align: right;">
-                        <button
-                        type="button"
-                        class="media-button margin-top-25 padding-top-30"
-                        id="exampleModal"
-                        data-toggle="modal" data-target="#exampleModal"
-                        >
-                        Apply to be a changemaker
-                    </button>
+                        <a style="cursor: pointer;" href="https://forms.gle/P9tWd3ezzwjVoDtr8">
+                            <button
+                                type="button"
+                                class="media-button margin-top-25 padding-top-30"
+                            >
+                                Apply to be a changemaker
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -557,6 +685,56 @@
                                 alt
                                 @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
                         </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF0023.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF0039.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF0053.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF9897.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF9914.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF9927.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF9959.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF9968.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF9988.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
+                        <li class="splide__slide singleImg overflow-hidden">
+                            <img class src="./assets/july-event/DSCF9999.jpg"
+                                alt
+                                @click="showModal = true; imgUrlGallery = $event.target.getAttribute('src');">
+                        </li>
                     </ul>
                 </div>
                 <div class="splide__progress">
@@ -620,6 +798,45 @@
                 </div>
             </section>
         </div>
+
+        
+        <!-- Podcast section-->
+        <div class="container margin-bottom-55">
+            <div class="row justify-content-center padding-top-30">
+                <div class="col-lg-8 col-sm-11 col-11">
+                    <div
+                        class="section-title b-top desktop-center padding-top-25 margin-bottom-35">
+                        <!-- <span>Why #28For28</span> -->
+                        <h2 class="title">#28for28 Podcast</h2>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <iframe src="https://drive.google.com/file/d/1NgQxo380NmRj6S_bCHNeLxbffr5qTe42/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                    <div class="margin-top-55">
+                        <h3 class="text-center "><a href="https://youtube.com/playlist?list=PLr9MqI2jyz-ZBEMbJMWJ-9lNDdibNzByU&si=QCOyd1pzdELpJiMT">Click here to tune into the 28for28 podcast !</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <!-- Videos section-->
+        <div class="container margin-bottom-55">
+            <div class="row justify-content-center padding-top-30">
+                <div class="col-lg-8 col-sm-11 col-11">
+                    <div
+                        class="section-title b-top desktop-center padding-top-25 margin-bottom-35">
+                        <!-- <span>Why #28For28</span> -->
+                        <h2 class="title">Videos</h2>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <iframe src="https://drive.google.com/file/d/1oF6oj4SMwxNMOzYxJB2nqQvTdyUyB3Io/preview" width="640" height="480" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <!--Partners Section-->
         <div id="partners" class="partners-logo margin-bottom-55">
             <div class="row justify-content-center padding-top-30">
@@ -652,9 +869,41 @@
                         style="margin:auto;text-align:center;">
                         <a href="https://www.savethechildren.net/"
                             target="_blank"><img
-                                src="./assets/sustainability/partner-logos/STC_Logo_Eng_Horiz_ColPos_RGB.svg"
+                                src="./assets/sustainability/partner-logos/bal_raksha_bharat.png"
                                 alt="save the child logo"
                                 style="height: 80px;"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Youth Partner-->
+        <div id="youth-partners" class="partners-logo margin-bottom-55">
+            <div class="row justify-content-center padding-top-30">
+                <div class="col-lg-8 col-sm-11 col-11">
+                    <div
+                        class="section-title b-top desktop-center padding-top-25 margin-bottom-35">
+                        <!-- <span>Why #28For28</span> -->
+                        <h2 class="title">Youth Partners</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row margin-top-">
+                    <div class="col-lg-3 col-xl-3"></div>
+                        
+                    </div>
+                    <div class="col-lg-3 col-xl-3"
+                        style="margin:auto; text-align:center;">
+                        <a href="https://mashglobal.org" target="_blank"><img
+                                src="./assets/header/iycn-logo.png"
+                                alt="technology partner the higglers company logo"
+                                style="height:150px;text-align: center; margin:auto"></a>
+                    </div>
+                    <div class="col-lg-3 col-xl-3"
+                        style="margin:auto;text-align:center;">
+                
                     </div>
                 </div>
             </div>
@@ -679,9 +928,72 @@
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li
+                        class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                            style="height: 20rem; margin: auto;"                               
+                            src="./assets/media/Et-now-pics/IMG_1568.png" alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        
+                        </li>
+                        <li
+                        class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                            style="height: 20rem; margin: auto;"                               
+                            src="./assets/media/Et-now-pics/IMG_1555.png" alt
+                            @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                        
+                        </li>
+                        <li
                             class="splide__slide border border-black rounded-lg overflow-hidden"><img
-                                style="width: 20rem;height: 20rem; margin: auto;"                               
-                                src="/assets/media/‘Youth key to environment conservation’.jpg" alt
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/youth_key.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                            
+                        </li>
+                        <li
+                            class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/Dainik_Bhaskar.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                            
+                        </li>
+                        <li
+                            class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/lucknow_news.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                            
+                        </li>
+                        <li
+                            class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/Pioneer.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                            
+                        </li>
+                        <li
+                            class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/snb.jpg" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                            
+                        </li>
+                        <li
+                            class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/Tennews.png" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                            
+                        </li>
+                        <li
+                            class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/indianexpress.png" alt
+                                @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
+                            
+                        </li>
+                        <li
+                            class="splide__slide border border-black rounded-lg overflow-hidden"><img
+                                style="height: 20rem; margin: auto;"                               
+                                src="./assets/media/hungama.png" alt
                                 @click="showModal = true; imgUrl = $event.target.getAttribute('src');">
                             
                         </li>
@@ -745,6 +1057,8 @@
                 </div>
             </section>
         </div>
+
+
         <!-- footer area start -->
         <footer class="footer-area" style="background-color: #e3b505;">
             <div class="footer-top padding-top-50 padding-bottom-25">
@@ -824,12 +1138,8 @@
                         <div class="col-lg-12">
                             <div class="copyright-area-inner"
                                 style="color: black;">
-                                &copy; Copyrights 2022 MASH PROJECT
-                                FOUNDATION. All rights reserved. Designed &
-                                Hosted by <a href="https://thehigglers.com"
-                                    style="color:black">tdnshah</a> | <a
-                                    href="https://thehigglers.com"
-                                    style="color:black">thehigglers.com</a>
+                                &copy; Copyrights 2023 MASH PROJECT
+                                FOUNDATION. All rights reserved.
                             </div>
                         </div>
                     </div>
@@ -942,6 +1252,31 @@
                 splide.mount();
 
             } );
+
+            //Mentors
+            document.addEventListener( 'DOMContentLoaded', function() {
+                    var splidegallery = new Splide( '#mentor' ,  {
+                        perPage: 3,
+                        perMove: 1,
+                        rewind : true,
+                        autoplay: 'true',
+                        gap:20,
+                        drag:true,
+                        trimSpace: 'move',
+                        breakpoints: {
+                            640: {
+                                perPage:1,
+                            },
+                            768:{
+                                perPage:2,
+                            }
+                        },
+                        } 
+                    );
+                    splidegallery.mount();
+
+                } );
+             
             </script>
     </body>
 </html>
